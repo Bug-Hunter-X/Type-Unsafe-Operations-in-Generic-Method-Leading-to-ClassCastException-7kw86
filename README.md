@@ -1,0 +1,3 @@
+# Type-Unsafe Operations in Generic Method Leading to ClassCastException
+
+This example demonstrates a common error in Scala where type-unsafe operations within a generic method can cause a `ClassCastException` at runtime.  The core issue is the use of `asInstanceOf`, which performs unchecked casts without compiler verification. This can be problematic when dealing with various types within the generic method.
